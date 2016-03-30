@@ -1,0 +1,4 @@
+---
+# Set of variables that are unique for a host
+rack: D5
+unit: 1

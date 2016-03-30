@@ -1,0 +1,12 @@
+---
+- name: hello world!
+  command: echo "hello world"
+
+- name: copy kenny to destination host
+  template: src=kenny.j2 dest=/tmp/kenny
+
+- name: install apache
+  apt:
+    name: apache2
+    state: present
+    notify: restart apache
